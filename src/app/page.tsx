@@ -16,28 +16,16 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
-        <ProductCTA
-          variant="primary"
-          size="medium"
-          title="Neden Ceviz Plus'ı Seçmelisiniz?"
-          description="20 yıllık deneyimimiz ve binlerce mutlu müşterimizle, en kaliteli ceviz fidanlarını sizlere sunuyoruz."
-        />
         <About />
         <Gallery />
-        <ProductCTA
-          variant="secondary"
-          size="small"
-          title="Hemen Sipariş Verin!"
-          description="Stoklar tükenmeden premium ceviz fidanlarınızı sipariş edin. Ücretsiz kargo ve garanti dahil!"
-          showWhatsApp={true}
-        />
         <FAQ />
         <Testimonials />
         <ProductCTA
-          variant="accent"
+          variant="primary"
           size="medium"
           title="Başarılı Hasatlar İçin Doğru Adres"
-          description="Uzman ekibimizden danışmanlık alın ve ceviz yetiştiriciliğinde başarıya ulaşın."
+          description="30 yılı aşkın deneyimimiz ve uzman ekibimizle, en kaliteli ceviz fidanlarını sizlere sunuyoruz. Hemen sipariş verin!"
+          showWhatsApp={true}
         />
         <Contact />
       </main>

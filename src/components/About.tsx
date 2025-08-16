@@ -1,25 +1,27 @@
 'use client';
 
-import { useTranslations } from '@/lib/translations';
+import Image from 'next/image';
+import { useTranslations } from "@/lib/useTranslations";
+
 
 const About = () => {
   const t = useTranslations('about');
 
   const stats = [
-    { key: 'experience', value: '20+', icon: '🏆' },
+    { key: 'experience', value: '30+', icon: '🏆' },
     { key: 'customers', value: '5000+', icon: '👥' },
     { key: 'saplings', value: '50K+', icon: '🌱' },
     { key: 'success', value: '%95', icon: '✅' },
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-primary/5 to-background">
+    <section id="about" className="py-20 bg-gradient-modern">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-16 space-y-tight">
+          <h2 className="text-2xl md:text-3xl font-bold gradient-text mb-4 text-shadow-soft">
             {t('title')}
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
@@ -31,10 +33,10 @@ const About = () => {
               {t('description')}
             </p>
             
-            <div className="space-y-6">
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-primary/10">
-                <h3 className="text-xl font-bold text-primary mb-3 flex items-center">
-                  <span className="mr-3">🎯</span>
+            <div className="space-y-professional">
+              <div className="card-modern p-8 rounded-xl shadow-medium hover:shadow-strong transition-all duration-300 border border-primary/10">
+                <h3 className="text-xl font-bold gradient-text mb-4 text-shadow-soft flex items-center">
+                  <span className="mr-3">🌿</span>
                   {t('mission')}
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
@@ -42,9 +44,9 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-primary/10">
-                <h3 className="text-xl font-bold text-primary mb-3 flex items-center">
-                  <span className="mr-3">🚀</span>
+              <div className="card-modern p-8 rounded-xl shadow-medium hover:shadow-strong transition-all duration-300 border border-primary/10">
+                <h3 className="text-xl font-bold gradient-text mb-4 text-shadow-soft flex items-center">
+                  <span className="mr-3">🌱</span>
                   {t('vision')}
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
@@ -56,44 +58,72 @@ const About = () => {
 
           {/* Image/Visual */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary/20 to-accent/30 rounded-3xl p-8 shadow-2xl">
-              <div className="bg-white/90 rounded-2xl p-8 text-center">
-                <div className="w-full h-64 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mb-6">
-                  <div className="text-center">
-                    <div className="w-20 h-20 mx-auto mb-4 text-primary">
-                      <svg fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1L9 7V9C9 10.1 9.9 11 11 11V22H13V11C14.1 11 15 10.1 15 9Z"/>
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-bold text-primary mb-2">Kalite Güvencesi</h3>
-                    <p className="text-sm text-foreground/70">Her fidan özenle seçilir ve test edilir</p>
+            <div className="grid grid-cols-1 gap-6">
+              {/* Main Image */}
+              <div className="relative h-80 rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/IMG_6381.JPG"
+                  alt="Ceviz Fidanlığı"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold mb-1">{t('images.main.title')}</h3>
+                  <p className="text-sm opacity-90">{t('images.main.subtitle')}</p>
+                </div>
+              </div>
+              
+              {/* Secondary Images */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-32 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/images/IMG_6395.JPG"
+                    alt="Ceviz Ağacı Bakımı"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
+                    {t('images.care.title')}
                   </div>
                 </div>
-                <div className="text-sm text-primary font-semibold">
-                  &ldquo;Doğanın en iyisini sizlere sunuyoruz&rdquo;
+                <div className="relative h-32 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/images/IMG_6600.JPG"
+                    alt="Kaliteli Ceviz Üretimi"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
+                    {t('images.production.title')}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-primary/10 text-center group hover:shadow-xl transition-custom"
-            >
-              <div className="text-3xl mb-3">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-bold text-primary mb-2 group-hover:text-secondary transition-custom">
-                {stat.value}
+        {/* Stats Section */}
+        {/* <div className="card-modern rounded-2xl p-8 shadow-strong bg-gradient-modern">
+          <h3 className="text-2xl font-bold text-center gradient-text mb-8 text-shadow-soft">
+            {t("stats.title")}
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center group">
+                <div className="text-3xl mb-3">{stat.icon}</div>
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300 text-shadow-soft">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-foreground/70 font-medium">
+                  {t(`stats.${stat.key}`)}
+                </div>
               </div>
-              <div className="text-sm text-foreground/70 font-medium">
-                {t(`stats.${stat.key}`)}
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </div> */}
       </div>
     </section>
   );

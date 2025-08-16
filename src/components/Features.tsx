@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations } from '@/lib/translations';
+import { useTranslations } from "@/lib/useTranslations";
+
 
 const Features = () => {
   const t = useTranslations('services');
@@ -60,7 +61,7 @@ const Features = () => {
     <section id="services" className="py-20 bg-gradient-to-b from-background to-accent/5">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">

@@ -1,4 +1,8 @@
-import { useTranslations } from '@/lib/translations';
+"use client";
+
+import { useTranslations } from "@/lib/useTranslations";
+import Image from "next/image";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,15 +19,19 @@ const Footer = () => {
         }}></div>
       </div>
 
-      <div className="container-custom py-16 relative">
+      <div className="container-custom pt-24 pb-16 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Enhanced Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-accent to-tertiary rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C+</span>
-              </div>
-              <h3 className="text-3xl font-bold text-accent">Ceviz Plus</h3>
+            <div className="flex items-center space-x-3 mb-6 mt-8">
+              <Image
+                src="/images/logo.svg"
+                alt="Ceviz Plus Logo"
+                width={48}
+                height={48}
+                className="rounded-xl shadow-medium"
+              />
+              <h3 className="text-2xl font-bold text-accent">Ceviz Plus</h3>
             </div>
             <p className="mb-8 text-white/90 leading-relaxed text-lg">
               {t('description')}
@@ -68,41 +76,41 @@ const Footer = () => {
 
           {/* Enhanced Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-accent">{t('quickLinks')}</h3>
+            <h3 className="text-xl font-bold mb-6 mt-8 text-accent">{t('quickLinks')}</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#home" className="text-white/80 hover:text-accent transition-custom flex items-center group">
-                  <span className="w-2 h-2 bg-accent/50 rounded-full mr-3 group-hover:bg-accent transition-custom"></span>
+                  <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
                   {tNav('home')}
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-white/80 hover:text-accent transition-custom flex items-center group">
-                  <span className="w-2 h-2 bg-accent/50 rounded-full mr-3 group-hover:bg-accent transition-custom"></span>
+                  <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
                   {tNav('services')}
                 </a>
               </li>
               <li>
                 <a href="#about" className="text-white/80 hover:text-accent transition-custom flex items-center group">
-                  <span className="w-2 h-2 bg-accent/50 rounded-full mr-3 group-hover:bg-accent transition-custom"></span>
+                  <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
                   Hakkımızda
                 </a>
               </li>
               <li>
                 <a href="#gallery" className="text-white/80 hover:text-accent transition-custom flex items-center group">
-                  <span className="w-2 h-2 bg-accent/50 rounded-full mr-3 group-hover:bg-accent transition-custom"></span>
+                  <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
                   {tNav('gallery')}
                 </a>
               </li>
               <li>
                 <a href="#faq" className="text-white/80 hover:text-accent transition-custom flex items-center group">
-                  <span className="w-2 h-2 bg-accent/50 rounded-full mr-3 group-hover:bg-accent transition-custom"></span>
+                  <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
                   S.S.S.
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-white/80 hover:text-accent transition-custom flex items-center group">
-                  <span className="w-2 h-2 bg-accent/50 rounded-full mr-3 group-hover:bg-accent transition-custom"></span>
+                  <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
                   {tNav('contact')}
                 </a>
               </li>
@@ -111,7 +119,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-accent">{t('contactInfo')}</h3>
+            <h3 className="text-xl font-bold mb-4 mt-8 text-accent">{t('contactInfo')}</h3>
             <address className="not-italic space-y-3 text-white/80">
               <div className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-0.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,19 +150,20 @@ const Footer = () => {
                 </a>
               </div>
 
-              <div className="pt-2">
-                <p className="text-sm text-white/60">
-                  {tContact('info.schedule')}
-                </p>
-              </div>
+              
             </address>
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-white/70 text-sm">
-            {t('copyright', { year: currentYear })}
-          </p>
+        <div className="border-t border-white/20 mt-8 pt-8 pb-8 px-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0 text-center sm:text-left">
+            <p className="text-white/60 text-sm break-words">
+              {t('copyright', { year: currentYear })}
+            </p>
+            <p className="text-white/60 text-sm font-medium break-words">
+               Developed by Yağmur Akbulut
+            </p>
+          </div>
         </div>
       </div>
     </footer>

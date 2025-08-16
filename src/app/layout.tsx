@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ClientWrapper from "@/components/ClientWrapper";
+import { structuredData } from "@/lib/structuredData";
+import translations from "@/lib/translations/tr";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,14 +16,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ceviz Plus | Premium Ceviz Fidanlığı ve Arborikültür Hizmetleri",
-  description: "Premium ceviz ağaçları, uzman arborikültür hizmetleri ve başarılı ceviz yetiştiriciliği için profesyonel danışmanlık. İngiliz, Siyah ve Fars cevizi çeşitleri mevcuttur.",
-  keywords: "ceviz fidanlığı, ceviz ağaçları, ceviz arborikültürü, ceviz yetiştiriciliği, İngiliz cevizi, Siyah ceviz, Fars cevizi, fidan, bahçe planlama, ceviz çiftçiliği",
+  title: translations.site.title,
+  description: translations.site.description,
+  keywords: translations.site.keywords,
   authors: [{ name: "Ceviz Plus" }],
   robots: "index, follow",
   openGraph: {
-    title: "Ceviz Plus | Premium Ceviz Fidanlığı ve Arborikültür Hizmetleri",
-    description: "Premium ceviz ağaçları, uzman arborikültür hizmetleri ve başarılı ceviz yetiştiriciliği için profesyonel danışmanlık.",
+    title: translations.site.title,
+    description: translations.site.description,
     url: "https://cevizplus.com",
     siteName: "Ceviz Plus",
     locale: "tr_TR",
@@ -36,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ceviz Plus | Premium Ceviz Fidanlığı",
-    description: "Premium ceviz ağaçları ve başarılı ceviz yetiştiriciliği için uzman arborikültür hizmetleri.",
+    title: translations.site.title,
+    description: translations.site.description,
     images: ["https://cevizplus.com/og-image.jpg"],
   },
 };
@@ -52,66 +55,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Ceviz Plus",
-    "description": "Premium ceviz fidanlığı, yüksek kaliteli ceviz ağaçları ve uzman arborikültür hizmetleri konusunda uzmanlaşmıştır",
-    "url": "https://cevizplus.com",
-    "telephone": "+90-123-456-7890",
-    "email": "info@cevizplus.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Ceviz Korusu Sokağı",
-      "addressLocality": "Ceviz Vadisi",
-      "addressRegion": "Bursa",
-      "postalCode": "16000",
-      "addressCountry": "TR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "40.1826",
-      "longitude": "29.0665"
-    },
-    "openingHours": [
-      "Mo-Fr 08:00-17:00",
-      "Sa 09:00-15:00"
-    ],
-    "priceRange": "$$",
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "40.1826",
-        "longitude": "29.0665"
-      },
-      "geoRadius": "200"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Ceviz Ağaçları ve Hizmetler",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "İngiliz Cevizi Ağaçları",
-            "description": "Üstün kalite ve hastalık direnci ile premium İngiliz cevizi ağaçları"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Arborikültür Danışmanlığı",
-            "description": "Ceviz ağacı dikimi, bakımı ve muhafazası konusunda uzman danışmanlık"
-          }
-        }
-      ]
-    }
-  };
-
   return (
     <html lang="tr">
       <head>
@@ -124,7 +67,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        {children}
+        <ClientWrapper>
+          {children}
+        </ClientWrapper>
       </body>
     </html>
   );

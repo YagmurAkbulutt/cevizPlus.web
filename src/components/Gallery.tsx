@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from '@/lib/translations';
+import Image from 'next/image';
+import { useTranslations } from "@/lib/useTranslations";
+
 
 type GalleryItem = {
   id: number;
@@ -74,13 +76,13 @@ const getCategoryIcon = (category: string) => {
 
 const Gallery = () => {
   const t = useTranslations('gallery');
-  // Gallery items using Turkish translations
+  // Gallery items using actual images from public/images directory
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
       title: t('items.matureGrove.title'),
       description: t('items.matureGrove.description'),
-      imagePath: '/images/walnut-orchard.jpg',
+      imagePath: '/images/IMG_6591.JPG',
       alt: t('items.matureGrove.title'),
       category: t('categories.matureTrees'),
     },
@@ -88,7 +90,7 @@ const Gallery = () => {
       id: 2,
       title: t('items.harvest.title'),
       description: t('items.harvest.description'),
-      imagePath: '/images/walnut-harvest.jpg',
+      imagePath: '/images/IMG_5680.JPG',
       alt: t('items.harvest.title'),
       category: t('categories.harvest'),
     },
@@ -96,7 +98,7 @@ const Gallery = () => {
       id: 3,
       title: t('items.saplings.title'),
       description: t('items.saplings.description'),
-      imagePath: '/images/walnut-saplings.jpg',
+      imagePath: '/images/IMG_5418.JPG',
       alt: t('items.saplings.title'),
       category: t('categories.youngTrees'),
     },
@@ -104,7 +106,7 @@ const Gallery = () => {
       id: 4,
       title: t('items.care.title'),
       description: t('items.care.description'),
-      imagePath: '/images/walnut-care.jpg',
+      imagePath: '/images/IMG_6372.JPG',
       alt: t('items.care.title'),
       category: t('categories.careServices'),
     },
@@ -112,7 +114,7 @@ const Gallery = () => {
       id: 5,
       title: t('items.varieties.title'),
       description: t('items.varieties.description'),
-      imagePath: '/images/walnut-varieties.jpg',
+      imagePath: '/images/IMG_5423.JPG',
       alt: t('items.varieties.title'),
       category: t('categories.varieties'),
     },
@@ -120,7 +122,7 @@ const Gallery = () => {
       id: 6,
       title: t('items.sustainable.title'),
       description: t('items.sustainable.description'),
-      imagePath: '/images/sustainable-practices.jpg',
+      imagePath: '/images/IMG_6381.JPG',
       alt: t('items.sustainable.title'),
       category: t('categories.sustainability'),
     },
@@ -128,7 +130,7 @@ const Gallery = () => {
       id: 7,
       title: t('items.rootSystems.title'),
       description: t('items.rootSystems.description'),
-      imagePath: '/images/root-systems.jpg',
+      imagePath: '/images/IMG_5434.JPG',
       alt: t('items.rootSystems.title'),
       category: t('categories.propagation'),
     },
@@ -136,9 +138,25 @@ const Gallery = () => {
       id: 8,
       title: t('items.grafting.title'),
       description: t('items.grafting.description'),
-      imagePath: '/images/grafting.jpg',
+      imagePath: '/images/IMG_6387.JPG',
       alt: t('items.grafting.title'),
       category: t('categories.propagation'),
+    },
+    {
+      id: 9,
+      title: t('items.groveView.title'),
+      description: t('items.groveView.description'),
+      imagePath: '/images/IMG_6395.JPG',
+      alt: t('items.groveView.title'),
+      category: t('categories.matureTrees'),
+    },
+    {
+      id: 10,
+      title: t('items.qualityProduction.title'),
+      description: t('items.qualityProduction.description'),
+      imagePath: '/images/IMG_6397.JPG',
+      alt: t('items.qualityProduction.title'),
+      category: t('categories.harvest'),
     },
   ];
 
@@ -148,7 +166,7 @@ const Gallery = () => {
     <section id="gallery" className="py-20 bg-gradient-to-b from-accent/5 to-background">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
@@ -160,23 +178,21 @@ const Gallery = () => {
           {galleryItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-custom cursor-pointer group border border-primary/10 hover:border-primary/30"
+              className="group cursor-pointer relative overflow-hidden rounded-xl card-modern shadow-medium hover:shadow-strong transition-all duration-300 transform hover:-translate-y-2 image-overlay focus-ring"
               onClick={() => setSelectedImage(item)}
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && setSelectedImage(item)}
             >
               <div className="relative h-56 w-full overflow-hidden">
-                {/* Enhanced visual representation with category-specific imagery */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${getGradientForCategory(item.category)} flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 mx-auto mb-3 text-white drop-shadow-lg">
-                      {getCategoryIcon(item.category)}
-                    </div>
-                    <p className="text-white font-semibold text-sm drop-shadow-md">{item.title}</p>
-                  </div>
-                  {/* Decorative elements */}
-                  <div className="absolute top-2 right-2 w-8 h-8 bg-white/20 rounded-full"></div>
-                  <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/15 rounded-full"></div>
-                  <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-white/10 rounded-full"></div>
-                </div>
+                <Image
+                  src={item.imagePath}
+                  alt={item.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                />
+                {/* Overlay gradient for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute top-3 left-3">
                   <span className="bg-white/90 text-primary text-xs px-3 py-1 rounded-full font-semibold shadow-lg">
                     {item.category}
@@ -213,16 +229,29 @@ const Gallery = () => {
               className="bg-white rounded-2xl max-w-5xl w-full overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className={`relative h-96 w-full bg-gradient-to-br ${getGradientForCategory(selectedImage.category)} flex items-center justify-center`}>
-                <div className="text-center text-white">
-                  <div className="w-24 h-24 mx-auto mb-4 drop-shadow-lg">
-                    {getCategoryIcon(selectedImage.category)}
+              <div className="relative h-96 w-full overflow-hidden">
+                <Image
+                  src={selectedImage.imagePath}
+                  alt={selectedImage.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1280px) 100vw, 1280px"
+                />
+                {/* Overlay for better text readability */}
+                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <div className="flex items-center mb-2">
+                    <div className="w-8 h-8 mr-3 drop-shadow-lg">
+                      {getCategoryIcon(selectedImage.category)}
+                    </div>
+                    <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium">
+                      {selectedImage.category}
+                    </span>
                   </div>
                   <h3 className="text-2xl font-bold drop-shadow-md">{selectedImage.title}</h3>
-                  <p className="text-lg opacity-90 mt-2">{selectedImage.category}</p>
                 </div>
                 <button
-                  className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-custom"
+                  className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-custom backdrop-blur-sm"
                   onClick={() => setSelectedImage(null)}
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -248,7 +277,7 @@ const Gallery = () => {
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
-                    Geri Dön
+                    {t('modal.back')}
                   </button>
                   <a
                     href="#contact"
@@ -258,7 +287,7 @@ const Gallery = () => {
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    İletişime Geç
+                    {t('modal.contact')}
                   </a>
                 </div>
               </div>
@@ -266,15 +295,7 @@ const Gallery = () => {
           </div>
         )}
 
-        <div className="text-center mt-12">
-          <p className="text-foreground/70 mb-4">{t('viewMore')}</p>
-          <a
-            href="/gallery"
-            className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-custom"
-          >
-            {t('viewFullGallery')}
-          </a>
-        </div>
+
       </div>
     </section>
   );
