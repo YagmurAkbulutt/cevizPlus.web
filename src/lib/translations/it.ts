@@ -3,7 +3,7 @@ const itMessages = {
   "site": {
     "title": "Ceviz Plus | Vivaio Premium di Noci",
     "description": "Piantine premium di noci, servizi esperti di arboricoltura e consulenza professionale per la coltivazione di successo delle noci. Disponibili varietà di noci inglesi, nere e persiane.",
-    "keywords": "vivaio di noci, alberi di noci, arboricoltura di noci, coltivazione di noci, noce inglese, noce nera, noce persiana, piantine, pianificazione giardini, agricoltura di noci"
+    "keywords": "vivaio di noci, piantine di noce, arboricoltura di noci, coltivazione di noci, noce inglese, noce nera, noce persiana, piantine, pianificazione giardini, agricoltura di noci"
   },
   "navigation": {
     "home": "Home",
@@ -12,13 +12,15 @@ const itMessages = {
     "gallery": "Galleria",
     "testimonials": "Testimonianze",
     "contact": "Contatto",
+    "faq": "F.A.Q.",
     "toggleMenu": "Mostra/Nascondi Menu",
     "orderNow": "Ordina Ora"
   },
   "hero": {
     "title": "Vivaio Premium di Noci",
-    "subtitle": "Gli Alberi di Noci di Più Alta Qualità della Turchia",
+    "subtitle": "Le Piantine di Noce di Più Alta Qualità della Turchia",
     "description": "Apri la porta a raccolti di successo con le piantine di noci di più alta qualità. Consulenza professionale e prodotti garantiti dal nostro team esperto.",
+    "badge": "🌱 Piantine Premium di Noci",
     "cta": "Ordina Subito",
     "ctaSecondary": "Contatto WhatsApp",
     "benefits": {
@@ -36,8 +38,7 @@ const itMessages = {
     "badges": {
       "popular": "Più Popolare!",
       "natural": "100% Naturale"
-    },
-    "badge": "🌱 Qualità Premium"
+    }
   },
   "services": {
     "title": "I Nostri Servizi",
@@ -78,31 +79,31 @@ const itMessages = {
   },
   "about": {
     "title": "Chi Siamo",
-    "subtitle": "20 anni di esperienza nella coltivazione di noci e migliaia di clienti soddisfatti",
-    "description": "Come Ceviz Plus, abbiamo prodotto le piantine di noci di più alta qualità della Turchia dal 2004. Con il nostro team esperto, tecniche di coltivazione moderne e processi di controllo qualità, miriamo a offrire i migliori prodotti ai nostri clienti.",
+    "subtitle": "Oltre 30 anni di esperienza nella coltivazione di noci e migliaia di clienti soddisfatti",
+    "description": "Come Ceviz Plus, produciamo le piantine di noci di più alta qualità della Turchia. Con il nostro team esperto, tecniche di coltivazione moderne e processi di controllo qualità, miriamo a offrire i migliori prodotti ai nostri clienti.",
     "mission": "La Nostra Missione",
     "missionText": "Sviluppare la coltivazione di noci in Turchia, supportare l'agricoltura sostenibile fornendo le piantine di più alta qualità ai nostri agricoltori.",
     "vision": "La Nostra Visione",
     "visionText": "Diventare il marchio leader della Turchia nei vivai di noci e diventare un marchio riconosciuto nei mercati internazionali.",
-    "stats": {
-      "experience": "Anni di Esperienza",
-      "customers": "Clienti Felici",
-      "saplings": "Produzione Piantine",
-      "success": "Tasso di Successo"
-    },
     "images": {
       "main": {
         "title": "Piantine Premium di Noci",
         "subtitle": "30+ anni di esperienza"
       },
-      "professional": {
+      "care": {
         "title": "Cura Professionale",
-        "subtitle": "Servizio del team esperto"
+        "subtitle": "Supporto esperto"
       },
-      "quality": {
+      "production": {
         "title": "Produzione di Qualità",
-        "subtitle": "Prodotti garantiti"
+        "subtitle": "Risultati garantiti"
       }
+    },
+    "stats": {
+      "experience": "Anni di Esperienza",
+      "customers": "Clienti Felici",
+      "saplings": "Produzione Piantine",
+      "success": "Tasso di Successo"
     }
   },
   "gallery": {
@@ -122,7 +123,7 @@ const itMessages = {
     "items": {
       "matureGrove": {
         "title": "Boschetto Maturo di Noci",
-        "description": "Vista magnifica dei nostri alberi di noce inglese di 15 anni"
+        "description": "Vista magnifica delle nostre piantine di noce inglese di 15 anni"
       },
       "harvest": {
         "title": "Tempo di Raccolta",
@@ -169,8 +170,10 @@ const itMessages = {
     }
   },
   "testimonials": {
-    "title": "Recensioni Clienti",
-    "subtitle": "Storie di successo ed esperienze dei nostri clienti",
+    "title": "Esperienza Affidabile",
+    "subtitle": "Siamo leader nel settore delle piantine di noce con anni di esperienza e migliaia di clienti felici",
+    "originalTitle": "Recensioni Clienti",
+    "originalSubtitle": "Storie di successo ed esperienze dei nostri clienti",
     "items": {
       "sarah": {
         "name": "Ahmet Yılmaz",
@@ -198,38 +201,61 @@ const itMessages = {
       }
     },
     "stats": {
+      "totalCustomers": "Clienti Totali",
+      "satisfactionRate": "Tasso di Soddisfazione",
+      "repeatCustomers": "Clienti Abituali",
       "customers": "Clienti Felici",
       "experience": "Anni di Esperienza",
-      "treesPlanted": "Alberi Piantati"
+      "treesPlanted": "Alberi Piantati",
+      "customersDescription": "I nostri clienti soddisfatti del nostro servizio di qualità",
+      "experienceDescription": "Esperienza esperta nella produzione e vendita di piantine di noce",
+      "treesPlantedDescription": "Piantine di noce di qualità piantate in tutta la Turchia",
+      "qualityGuarantee": "Garanzia di Qualità Affidabile"
     }
   },
   "faq": {
     "title": "Domande Frequenti",
     "subtitle": "Quello che viene chiesto sulla coltivazione di noci",
     "items": {
+      "fidanTypes": {
+        "question": "Cos'è una piantina di noce, quali tipi ci sono?",
+        "answer": "Le piantine di noce sono giovani alberi ottenuti innestando varietà di noce produttive su portainnesti resistenti. Ci sono piantine innestate e da seme. Le piantine innestate sono più preferite perché danno frutti prima e hanno caratteristiche varietali garantite."
+      },
+      "varietySelection": {
+        "question": "Quale varietà di piantina di noce è adatta alla mia regione?",
+        "answer": "La scelta della varietà dipende dalle condizioni climatiche della vostra regione. Per le regioni fredde sono adatte Franquette e Fernette, per le regioni calde Chandler e Howard. Il nostro team di esperti vi consiglierà la varietà più adatta alla vostra regione."
+      },
       "planting": {
         "question": "Quando dovrebbero essere piantate le piantine di noci?",
         "answer": "Le piantine di noci dovrebbero essere piantate nei mesi invernali (novembre-marzo) per ottenere i migliori risultati. Durante questo periodo, le piantine sono dormienti e attecchiscono meglio dopo la piantagione."
+      },
+      "plantingMethod": {
+        "question": "Come piantare una piantina di noce?",
+        "answer": "Scavate una buca di 60x60x60 cm, mescolate il terreno con compost. Posizionate la piantina in modo che il punto di innesto sia 5-10 cm sopra il livello del suolo. Dopo aver riempito la buca, annaffiate abbondantemente e pacciamate."
+      },
+      "harvest": {
+        "question": "Dopo quanti anni una piantina di noce dà frutti?",
+        "answer": "Le piantine di noce innestate iniziano a dare frutti dopo 3-4 anni. La piena produttività si raggiunge dopo 7-8 anni. Le piantine da seme possono richiedere 8-12 anni per dare frutti."
       },
       "soil": {
         "question": "Che tipo di terreno è adatto per le noci?",
         "answer": "Gli alberi di noci preferiscono terreni profondi, ben drenati con valori di pH tra 6.0-7.5. I terreni argillo-sabbiosi sono ideali, e si dovrebbero preferire aree che non si allagano."
       },
-      "spacing": {
-        "question": "Quale dovrebbe essere la distanza tra gli alberi?",
-        "answer": "Si raccomanda una distanza minima di 8x8 metri per gli alberi di noci. 10x10 metri sarebbe più adatto per varietà grandi. Questa distanza permette il pieno sviluppo degli alberi."
-      },
-      "harvest": {
-        "question": "Quando posso raccogliere?",
-        "answer": "Gli alberi di noci generalmente iniziano a fruttificare a 4-6 anni di età. La resa completa si ottiene a 8-10 anni. Il tempo di raccolta è settembre-ottobre a seconda della varietà."
+      "pricing": {
+        "question": "Da cosa dipendono i prezzi delle piantine di noce?",
+        "answer": "I prezzi delle piantine dipendono dalla varietà, dall'età, dalle dimensioni e dalla qualità. Le piantine innestate sono più costose di quelle da seme. Anche la rarità della varietà e le condizioni di mercato influenzano i prezzi."
       },
       "care": {
         "question": "Come dovrebbe essere fatta la cura?",
         "answer": "Sono richieste irrigazione regolare, potatura annuale, fertilizzazione e controllo dei parassiti. Specialmente nei primi anni, si dovrebbe prestare attenzione all'irrigazione e alla fertilizzazione."
       },
-      "varieties": {
-        "question": "Quale varietà dovrei scegliere?",
-        "answer": "Varia secondo le vostre condizioni climatiche e scopo. Noce inglese per produzione commerciale, noce persiana per climi freddi, e la noce nera è preferita come portainnesto."
+      "watering": {
+        "question": "Come annaffiare le piantine di noce?",
+        "answer": "Le giovani piantine dovrebbero essere annaffiate regolarmente, specialmente nei primi 2-3 anni. In estate, annaffiate profondamente 1-2 volte a settimana. Evitate l'irrigazione eccessiva per prevenire malattie delle radici."
+      },
+      "onlineOrder": {
+        "question": "È sicuro ordinare piantine di noce online?",
+        "answer": "Sì, è sicuro quando ordinate da aziende affidabili come noi. Offriamo garanzia di qualità, imballaggio sicuro e consegna rapida. Tutte le nostre piantine sono certificate e garantite."
       }
     },
     "contactCta": {
@@ -283,12 +309,17 @@ const itMessages = {
     "whatsappMessage": "Ciao, vorrei ottenere informazioni sui giovani alberi di noce."
   },
   "productCta": {
-    "title": "Piantine di Noce Premium",
-    "subtitle": "Costruisci il tuo giardino di noci con le nostre piantine di qualità",
+    "badge": "🌱 Offerta Speciale",
+    "title": "L'Indirizzo Giusto per Raccolti di Successo",
+    "subtitle": "Con i nostri 30+ anni di esperienza e il team di esperti, vi offriamo le piantine di noce di più alta qualità. Ordinate subito!",
     "description": "Ottieni un raccolto di successo con le nostre piantine di noce ad alto rendimento, coltivate con cura dal nostro team di esperti.",
-    "primaryButton": "Ordina Ora",
+    "guarantee": "100% Garantito",
+    "primaryButton": "Ordina Subito",
     "secondaryButton": "Contatto WhatsApp",
     "benefits": {
+      "qualityAssurance": "Garanzia di Qualità",
+      "freeShipping": "Spedizione Gratuita",
+      "expertConsultation": "Consulenza Esperta",
       "fastDelivery": "Consegna Veloce",
       "expertSupport": "Supporto Esperto"
     },
@@ -300,13 +331,22 @@ const itMessages = {
     }
   },
   "footer": {
-    "description": "Come il vivaio di noci leader della Turchia, abbiamo coltivato gli alberi di noci di più alta qualità con i nostri 20 anni di esperienza.",
+    "company": "Ceviz Plus",
+    "description": "Produciamo le piantine di noce di più alta qualità della Turchia con oltre 20 anni di esperienza. Servizio professionale e prodotti garantiti.",
     "quickLinks": "Link Rapidi",
+    "services": "Servizi",
     "contact": "Contatto",
     "contactInfo": "Informazioni di Contatto",
     "followUs": "Seguici",
     "rights": "Tutti i diritti riservati.",
+    "allRightsReserved": "Tutti i diritti riservati.",
+    "privacyPolicy": "Politica sulla Privacy",
+    "termsOfService": "Termini di Servizio",
     "copyright": "© {year} Ceviz Plus. Tutti i diritti riservati.",
+    "stats": {
+      "yearsExperience": "Anni di Esperienza",
+      "happyCustomers": "Clienti Felici"
+    },
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",

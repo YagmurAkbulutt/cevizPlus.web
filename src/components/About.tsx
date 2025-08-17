@@ -79,7 +79,7 @@ const About = () => {
                 <div className="relative h-32 rounded-xl overflow-hidden shadow-lg">
                   <Image
                     src="/images/IMG_6395.JPG"
-                    alt="Ceviz Ağacı Bakımı"
+                    alt="Ceviz Fidanı Bakımı"
                     fill
                     className="object-cover"
                   />

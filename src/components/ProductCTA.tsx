@@ -39,15 +39,15 @@ const ProductCTA = ({
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-primary/10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              🌱 Özel Fırsat
+              {t('badge')}
             </div>
             
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-4">
-              {title}
+              {t('title')}
             </h2>
             
             <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-              {description}
+              {t('subtitle')}
             </p>
 
             {/* Benefits */}
@@ -56,7 +56,7 @@ const ProductCTA = ({
                 <svg className="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="font-medium text-foreground">%100 Garantili</span>
+                <span className="font-medium text-foreground">{t('guarantee')}</span>
               </div>
               <div className="flex items-center justify-center bg-white/60 px-4 py-3 rounded-lg">
                 <svg className="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">

@@ -3,7 +3,7 @@ const trMessages = {
   "site": {
     "title": "Ceviz Plus | Premium Ceviz Fidanlığı",
     "description": "Premium ceviz fidanları, uzman arborikültür hizmetleri ve başarılı ceviz yetiştiriciliği için profesyonel danışmanlık. İngiliz, Siyah ve Fars cevizi çeşitleri mevcuttur.",
-    "keywords": "ceviz fidanlığı, ceviz ağaçları, ceviz arborikültürü, ceviz yetiştiriciliği, İngiliz cevizi, Siyah ceviz, Fars cevizi, fidan, bahçe planlama, ceviz çiftçiliği"
+    "keywords": "ceviz fidanlığı, ceviz fidanları, ceviz arborikültürü, ceviz yetiştiriciliği, İngiliz cevizi, Siyah ceviz, Fars cevizi, fidan, bahçe planlama, ceviz çiftçiliği"
   },
   "navigation": {
     "home": "Ana Sayfa",
@@ -12,12 +12,13 @@ const trMessages = {
     "gallery": "Galeri",
     "testimonials": "Yorumlar",
     "contact": "İletişim",
+    "faq": "S.S.S.",
     "toggleMenu": "Menüyü Aç/Kapat",
     "orderNow": "Sipariş Ver"
   },
   "hero": {
     "title": "Premium Ceviz Fidanlığı",
-    "subtitle": "Türkiye'nin En Kaliteli Ceviz Ağaçları",
+    "subtitle": "Türkiye'nin En Kaliteli Ceviz Fidanları",
     "description": "En kaliteli ceviz fidanları ile başarılı hasatların kapısını aralayın. Uzman ekibimizden profesyonel danışmanlık ve garantili ürünler.",
     "badge": "🌱 Premium Ceviz Fidanları",
     "cta": "Hemen Sipariş Ver",
@@ -40,9 +41,11 @@ const trMessages = {
     }
   },
   "productCta": {
-    "title": "Premium Ceviz Fidanları",
-    "subtitle": "Kaliteli fidanlarımızla ceviz bahçenizi kurun",
+    "badge": "🌱 Özel Fırsat",
+    "title": "Başarılı Hasatlar İçin Doğru Adres",
+    "subtitle": "30 yılı aşkın deneyimimiz ve uzman ekibimizle, en kaliteli ceviz fidanlarını sizlere sunuyoruz. Hemen sipariş verin!",
     "description": "Uzman ekibimiz tarafından özenle yetiştirilen, yüksek verimli ceviz fidanlarımız ile başarılı bir hasat elde edin.",
+    "guarantee": "%100 Garantili",
     "primaryButton": "Hemen Sipariş Ver",
     "secondaryButton": "WhatsApp İletişim",
     "benefits": {
@@ -142,7 +145,7 @@ const trMessages = {
     "items": {
       "matureGrove": {
         "title": "Olgun Ceviz Korusu",
-        "description": "15 yaşındaki İngiliz cevizi ağaçlarımızın muhteşem görünümü"
+        "description": "15 yaşındaki İngiliz cevizi fidanlarımızın muhteşem görünümü"
       },
       "harvest": {
         "title": "Hasat Zamanı",
@@ -174,7 +177,7 @@ const trMessages = {
       },
       "groveView": {
         "title": "Ceviz Bahçesi Görünümü",
-        "description": "Olgun ceviz ağaçlarımızın muhteşem manzarası"
+        "description": "Olgun ceviz fidanlarımızın muhteşem manzarası"
       },
       "qualityProduction": {
         "title": "Kaliteli Üretim",
@@ -189,8 +192,10 @@ const trMessages = {
     "viewFullGallery": "Tam Galeriyi Görüntüle"
   },
   "testimonials": {
-    "title": "Müşteri Yorumları",
-    "subtitle": "Müşterilerimizin başarı hikayeleri ve deneyimleri",
+    "title": "Güvenilir Deneyim",
+    "subtitle": "Yılların verdiği tecrübe ve binlerce mutlu müşterimizle ceviz fidanı sektöründe lider konumdayız",
+    "originalTitle": "Müşteri Yorumları",
+    "originalSubtitle": "Müşterilerimizin başarı hikayeleri ve deneyimleri",
     "items": {
       "sarah": {
         "name": "Ahmet Yılmaz",
@@ -220,7 +225,11 @@ const trMessages = {
     "stats": {
       "customers": "Mutlu Müşteri",
       "experience": "Yıl Deneyim",
-      "treesPlanted": "Dikilen Ağaç"
+      "treesPlanted": "Dikilen Ağaç",
+      "customersDescription": "Kaliteli hizmetimizden memnun kalan müşterilerimiz",
+      "experienceDescription": "Ceviz fidanı üretimi ve satışında uzman deneyim",
+      "treesPlantedDescription": "Türkiye genelinde dikilen kaliteli ceviz fidanları",
+      "qualityGuarantee": "Güvenilir Kalite Garantisi"
     }
   },
   "faq": {
@@ -319,13 +328,17 @@ const trMessages = {
     "whatsappMessage": "Merhaba, ceviz fidanları hakkında bilgi almak istiyorum."
   },
   "footer": {
-    "description": "Türkiye'nin önde gelen ceviz fidanlığı olarak, 20 yıllık deneyimimizle en kaliteli ceviz ağaçlarını yetiştiriyoruz.",
+    "description": "Türkiye'nin önde gelen ceviz fidanlığı olarak, 20 yıllık deneyimimizle en kaliteli ceviz fidanlarını yetiştiriyoruz.",
     "quickLinks": "Hızlı Bağlantılar",
     "contact": "İletişim",
     "contactInfo": "İletişim Bilgileri",
     "followUs": "Bizi Takip Edin",
     "rights": "Tüm hakları saklıdır.",
     "copyright": "© {year} Ceviz Plus. Tüm hakları saklıdır.",
+    "stats": {
+      "yearsExperience": "Yıl Deneyim",
+      "happyCustomers": "Mutlu Müşteri"
+    },
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",

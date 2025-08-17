@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { useTranslations } from "@/lib/useTranslations";
 
 
@@ -219,45 +220,94 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Enhanced Image Modal */}
+        {/* Enhanced Image Modal with Zoom */}
         {selectedImage && (
           <div
-            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
             onClick={() => setSelectedImage(null)}
           >
             <div
               className="bg-white rounded-2xl max-w-5xl w-full overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative h-96 w-full overflow-hidden">
-                <Image
-                  src={selectedImage.imagePath}
-                  alt={selectedImage.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1280px) 100vw, 1280px"
-                />
-                {/* Overlay for better text readability */}
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 mr-3 drop-shadow-lg">
-                      {getCategoryIcon(selectedImage.category)}
-                    </div>
-                    <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium">
-                      {selectedImage.category}
-                    </span>
-                  </div>
-                  <h3 className="text-2xl font-bold drop-shadow-md">{selectedImage.title}</h3>
-                </div>
-                <button
-                  className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-custom backdrop-blur-sm"
-                  onClick={() => setSelectedImage(null)}
+              <div className="relative h-96 w-full overflow-hidden bg-black">
+                <TransformWrapper
+                  initialScale={1}
+                  minScale={1}
+                  maxScale={4}
+                  wheel={{ step: 0.1 }}
+                  pinch={{ step: 5 }}
+                  doubleClick={{ disabled: false, step: 0.7 }}
+                  panning={{ disabled: false }}
+                  centerOnInit={true}
+                  limitToBounds={true}
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
+                  {({ zoomIn, zoomOut, resetTransform }) => (
+                    <>
+                      <TransformComponent
+                        wrapperClass="!w-full !h-full"
+                        contentClass="!w-full !h-full !flex !items-center !justify-center"
+                      >
+                        <img
+                          src={selectedImage.imagePath}
+                          alt={selectedImage.alt}
+                          className="w-full h-full object-cover"
+                          style={{ minWidth: '100%', minHeight: '100%' }}
+                        />
+                      </TransformComponent>
+                      {/* Overlay for better text readability */}
+                      <div className="absolute inset-0 bg-black/40 pointer-events-none z-10"></div>
+                      <div className="absolute bottom-4 left-4 text-white pointer-events-none z-20">
+                        <div className="flex items-center mb-2">
+                          <div className="w-8 h-8 mr-3 drop-shadow-lg">
+                            {getCategoryIcon(selectedImage.category)}
+                          </div>
+                          <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium">
+                            {selectedImage.category}
+                          </span>
+                        </div>
+                        <h3 className="text-2xl font-bold drop-shadow-md">{selectedImage.title}</h3>
+                      </div>
+                      <button
+                        className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-custom backdrop-blur-sm pointer-events-auto z-30"
+                        onClick={() => setSelectedImage(null)}
+                      >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                      {/* Modern Zoom Controls */}
+                      <div className="absolute bottom-4 right-4 pointer-events-auto z-30">
+                        <div className="flex gap-1">
+                          <button
+                            className="group text-white p-3 rounded-xl transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-white/10"
+                            onClick={() => zoomIn()}
+                            title="Yakınlaştır"
+                          >
+                            <svg className="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4m-2-2h4" />
+                            </svg>
+                          </button>
+                          <button
+                            className="group text-white p-3 rounded-xl transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-white/10"
+                            onClick={() => zoomOut()}
+                            title="Uzaklaştır"
+                          >
+                            <svg className="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12h6" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      
+                      {/* Modern Zoom Hint */}
+                      
+                    </>
+                  )}
+                </TransformWrapper>
+
               </div>
               <div className="p-8">
                 <div className="flex items-start justify-between mb-4">

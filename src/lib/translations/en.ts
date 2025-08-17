@@ -3,7 +3,7 @@ const enMessages = {
   "site": {
     "title": "Ceviz Plus | Premium Walnut Nursery",
     "description": "Premium walnut saplings, expert arboriculture services and professional consulting for successful walnut cultivation. English, Black and Persian walnut varieties available.",
-    "keywords": "walnut nursery, walnut trees, walnut arboriculture, walnut cultivation, English walnut, Black walnut, Persian walnut, saplings, garden planning, walnut farming"
+    "keywords": "walnut nursery, walnut saplings, walnut arboriculture, walnut cultivation, English walnut, Black walnut, Persian walnut, saplings, garden planning, walnut farming"
   },
   "navigation": {
     "home": "Home",
@@ -12,12 +12,13 @@ const enMessages = {
     "gallery": "Gallery",
     "testimonials": "Testimonials",
     "contact": "Contact",
+    "faq": "F.A.Q.",
     "toggleMenu": "Toggle Menu",
     "orderNow": "Order Now"
   },
   "hero": {
     "title": "Premium Walnut Nursery",
-    "subtitle": "Turkey's Highest Quality Walnut Trees",
+    "subtitle": "Turkey's Highest Quality Walnut Saplings",
     "description": "Open the door to successful harvests with the highest quality walnut saplings. Professional consulting and guaranteed products from our expert team.",
     "cta": "Order Now",
     "ctaSecondary": "WhatsApp Contact",
@@ -122,7 +123,7 @@ const enMessages = {
     "items": {
       "matureGrove": {
         "title": "Mature Walnut Grove",
-        "description": "Magnificent view of our 15-year-old English walnut trees"
+        "description": "Magnificent view of our 15-year-old English walnut saplings"
       },
       "harvest": {
         "title": "Harvest Time",
@@ -154,7 +155,7 @@ const enMessages = {
       },
       "groveView": {
         "title": "Grove View",
-        "description": "Magnificent view of our mature walnut trees"
+        "description": "Magnificent view of our mature walnut saplings"
       },
       "qualityProduction": {
         "title": "Quality Production",
@@ -169,8 +170,10 @@ const enMessages = {
     }
   },
   "testimonials": {
-    "title": "Customer Reviews",
-    "subtitle": "Success stories and experiences of our customers",
+    "title": "Trusted Experience",
+    "subtitle": "We are the leader in the walnut sapling sector with years of experience and thousands of happy customers",
+    "originalTitle": "Customer Reviews",
+    "originalSubtitle": "Success stories and experiences of our customers",
     "items": {
       "sarah": {
         "name": "Ahmet Yılmaz",
@@ -200,36 +203,56 @@ const enMessages = {
     "stats": {
       "customers": "Happy Customers",
       "experience": "Years Experience",
-      "treesPlanted": "Trees Planted"
+      "treesPlanted": "Trees Planted",
+      "customersDescription": "Our customers satisfied with our quality service",
+      "experienceDescription": "Expert experience in walnut sapling production and sales",
+      "treesPlantedDescription": "Quality walnut saplings planted throughout Turkey",
+      "qualityGuarantee": "Reliable Quality Guarantee"
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "What you wonder about walnut cultivation",
     "items": {
+      "fidanTypes": {
+        "question": "What is a walnut sapling and what types are available?",
+        "answer": "Walnut saplings come in different varieties such as Chandler, Fernor, Pedro, Kaman, and Şebin. Choosing the right sapling type according to climate and soil structure is important for yield."
+      },
+      "varietySelection": {
+        "question": "Which walnut sapling variety is suitable for my region?",
+        "answer": "Walnut sapling selection should be made according to your region's climate, altitude and soil characteristics. Fernor is recommended for cold climates, Chandler and Pedro for warm and temperate regions."
+      },
       "planting": {
         "question": "When should walnut saplings be planted?",
         "answer": "Walnut saplings should be planted in winter months (November-March) for best results. During this period, saplings are dormant and take root better after planting."
       },
-      "soil": {
-        "question": "What soil type is suitable for walnuts?",
-        "answer": "Walnut trees prefer deep, well-drained soils with pH values between 6.0-7.5. Clay-sandy soils are ideal, and areas that do not flood should be preferred."
-      },
-      "spacing": {
-        "question": "What should be the distance between trees?",
-        "answer": "A minimum distance of 8x8 meters is recommended for walnut trees. 10x10 meters would be more suitable for large varieties. This distance allows full development of trees."
+      "plantingMethod": {
+        "question": "How should walnut saplings be planted?",
+        "answer": "For sapling planting, a 60x60 cm hole is dug, mixed with organic fertilizer and sapling roots are carefully placed. Water must be given after planting."
       },
       "harvest": {
         "question": "When can I harvest?",
-        "answer": "Walnut trees usually start bearing fruit at 4-6 years old. Full yield is obtained at 8-10 years old. Harvest time is September-October depending on the variety."
+        "answer": "Walnut saplings usually start bearing fruit at 4-6 years old. Full yield is obtained at 8-10 years old. Harvest time is September-October depending on the variety."
+      },
+      "soil": {
+        "question": "What soil type is suitable for walnuts?",
+        "answer": "Walnut saplings prefer deep, well-drained soils with pH values between 6.0-7.5. Clay-sandy soils are ideal, and areas that do not flood should be preferred."
+      },
+      "pricing": {
+        "question": "What factors affect walnut sapling prices?",
+        "answer": "Walnut sapling prices vary according to the variety, age, and whether it is grafted or not. The most preferred variety is Chandler walnut sapling."
       },
       "care": {
         "question": "How should care be done?",
         "answer": "Regular watering, annual pruning, fertilization and pest control are required. Especially in the first years, attention should be paid to watering and fertilization."
       },
-      "varieties": {
-        "question": "Which variety should I choose?",
-        "answer": "It varies according to your climate conditions and purpose. English walnut for commercial production, Persian walnut for cold climates, and Black walnut is preferred as rootstock."
+      "watering": {
+        "question": "How should walnut sapling watering be done?",
+        "answer": "Walnut saplings should be watered regularly, especially for the first 3 years. Drip irrigation system is the most efficient method."
+      },
+      "onlineOrder": {
+        "question": "Is ordering walnut saplings online safe?",
+        "answer": "Yes, you can order certified and grafted saplings from reliable walnut sapling sales sites and receive them by cargo."
       }
     },
     "contactCta": {
@@ -283,9 +306,11 @@ const enMessages = {
     "whatsappMessage": "Hello, I would like to get information about walnut saplings."
   },
   "productCta": {
-    "title": "Premium Walnut Saplings",
-    "subtitle": "Build your walnut garden with our quality saplings",
+    "badge": "🌱 Special Offer",
+    "title": "The Right Address for Successful Harvests",
+    "subtitle": "With our 30+ years of experience and expert team, we offer you the highest quality walnut saplings. Order now!",
     "description": "Achieve a successful harvest with our high-yield walnut saplings, carefully grown by our expert team.",
+    "guarantee": "100% Guaranteed",
     "primaryButton": "Order Now",
     "secondaryButton": "WhatsApp Contact",
     "benefits": {
@@ -303,13 +328,17 @@ const enMessages = {
     }
   },
   "footer": {
-    "description": "As Turkey's leading walnut nursery, we have been growing the highest quality walnut trees with our 20 years of experience.",
+    "description": "As Turkey's leading walnut nursery, we have been growing the highest quality walnut saplings with our 20 years of experience.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "contactInfo": "Contact Information",
     "followUs": "Follow Us",
     "rights": "All rights reserved.",
     "copyright": "© {year} Ceviz Plus. All rights reserved.",
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "happyCustomers": "Happy Customers"
+    },
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",

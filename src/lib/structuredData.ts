@@ -51,7 +51,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Arborikültür Danışmanlığı",
-            "description": "Ceviz ağacı dikimi, bakımı ve muhafazası konusunda uzman danışmanlık"
+            "description": "Ceviz fidanı dikimi, bakımı ve muhafazası konusunda uzman danışmanlık"
           }
         }
       ]

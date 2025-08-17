@@ -9,6 +9,7 @@ const Footer = () => {
   const t = useTranslations('footer');
   const tContact = useTranslations('contact');
   const tNav = useTranslations('navigation');
+  const tStats = useTranslations('footer.stats');
 
   return (
     <footer className="bg-gradient-to-br from-primary via-primary to-secondary text-white relative overflow-hidden">
@@ -41,11 +42,11 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
                 <div className="text-2xl font-bold text-accent">20+</div>
-                <div className="text-sm text-white/80">Yıl Deneyim</div>
+                <div className="text-sm text-white/80">{tStats('yearsExperience')}</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
                 <div className="text-2xl font-bold text-accent">5K+</div>
-                <div className="text-sm text-white/80">Mutlu Müşteri</div>
+                <div className="text-sm text-white/80">{tStats('happyCustomers')}</div>
               </div>
             </div>
             {/* Enhanced Social Links */}
@@ -93,7 +94,7 @@ const Footer = () => {
               <li>
                 <a href="#about" className="text-white/80 hover:text-accent transition-custom flex items-center group">
                   <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
-                  Hakkımızda
+                  {tNav('aboutUs')}
                 </a>
               </li>
               <li>
@@ -105,7 +106,7 @@ const Footer = () => {
               <li>
                 <a href="#faq" className="text-white/80 hover:text-accent transition-custom flex items-center group">
                   <span className="w-1 h-1 bg-accent/50 rounded-full mr-2 group-hover:bg-accent transition-custom"></span>
-                  S.S.S.
+                  {tNav('faq')}
                 </a>
               </li>
               <li>

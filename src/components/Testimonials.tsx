@@ -11,10 +11,10 @@ const Testimonials = () => {
       <div className="container-custom">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-            Güvenilir Deneyim
+            {t('title')}
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            Yılların verdiği tecrübe ve binlerce mutlu müşterimizle ceviz fidanı sektöründe lider konumdayız
+            {t('subtitle')}
           </p>
         </div>
 
@@ -28,8 +28,8 @@ const Testimonials = () => {
                 </svg>
               </div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">500+</div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">Mutlu Müşteri</h3>
-              <p className="text-gray-600 text-xs">Kaliteli hizmetimizden memnun kalan müşterilerimiz</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">{t('stats.customers')}</h3>
+              <p className="text-gray-600 text-xs">{t('stats.customersDescription')}</p>
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md border border-green-100 text-center hover:shadow-lg transition-shadow duration-300">
@@ -39,8 +39,8 @@ const Testimonials = () => {
                 </svg>
               </div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">30+</div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">Yıl Deneyim</h3>
-              <p className="text-gray-600 text-xs">Ceviz fidanı üretimi ve satışında uzman deneyim</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">{t('stats.experience')}</h3>
+              <p className="text-gray-600 text-xs">{t('stats.experienceDescription')}</p>
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md border border-green-100 text-center hover:shadow-lg transition-shadow duration-300">
@@ -50,8 +50,8 @@ const Testimonials = () => {
                 </svg>
               </div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">10,000+</div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">Dikilen Ağaç</h3>
-              <p className="text-gray-600 text-xs">Türkiye genelinde dikilen kaliteli ceviz fidanları</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">{t('stats.treesPlanted')}</h3>
+              <p className="text-gray-600 text-xs">{t('stats.treesPlantedDescription')}</p>
             </div>
           </div>
           
@@ -60,7 +60,7 @@ const Testimonials = () => {
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Güvenilir Kalite Garantisi
+              {t('stats.qualityGuarantee')}
             </div>
           </div>
         </div>

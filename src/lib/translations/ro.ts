@@ -3,7 +3,7 @@ const roMessages = {
   "site": {
     "title": "Ceviz Plus | Pepiniera Premium de Nuci",
     "description": "Puieți premium de nuci, servicii specializate de arbocultură și consultanță profesională pentru cultivarea cu succes a nucilor. Disponibile soiuri de nuci englezești, negre și persane.",
-    "keywords": "pepiniera de nuci, copaci de nuci, arboricultură nuci, cultivarea nucilor, nuci englezești, nuci negre, nuci persane, puieți, planificarea grădinii, agricultura nucilor"
+    "keywords": "pepiniera de nuci, puieți de nuc, arboricultură nuci, cultivarea nucilor, nuci englezești, nuci negre, nuci persane, puieți, planificarea grădinii, agricultura nucilor"
   },
   "navigation": {
     "home": "Acasă",
@@ -12,12 +12,13 @@ const roMessages = {
     "gallery": "Galerie",
     "testimonials": "Testimoniale",
     "contact": "Contact",
+    "faq": "Î.F.",
     "toggleMenu": "Afișează/Ascunde Meniu",
     "orderNow": "Comandă Acum"
   },
   "hero": {
     "title": "Pepiniera Premium de Nuci",
-    "subtitle": "Cei Mai Calitativ Copaci de Nuci din Turcia",
+    "subtitle": "Cei Mai Calitativ Puieți de Nuc din Turcia",
     "description": "Deschideți ușa către recolte de succes cu cei mai calitativ puieți de nuci. Consultanță profesională și produse garantate de la echipa noastră de experți.",
     "cta": "Comandă Acum",
     "ctaSecondary": "Contact WhatsApp",
@@ -102,6 +103,14 @@ const roMessages = {
       "quality": {
         "title": "Producție de Calitate",
         "subtitle": "Produse garantate"
+      },
+      "care": {
+        "title": "Îngrijire Specializată",
+        "subtitle": "Servicii complete de îngrijire"
+      },
+      "production": {
+        "title": "Producție Profesională",
+        "subtitle": "Metode moderne de cultivare"
       }
     }
   },
@@ -154,7 +163,7 @@ const roMessages = {
       },
       "groveView": {
         "title": "Vedere Livadă",
-        "description": "Vedere magnifică a copacilor noștri maturi de nuci"
+        "description": "Vedere magnifică a puieților noștri de nuc englezesc de 15 ani"
       },
       "qualityProduction": {
         "title": "Producție de Calitate",
@@ -169,8 +178,10 @@ const roMessages = {
     }
   },
   "testimonials": {
-    "title": "Recenzii Clienți",
-    "subtitle": "Poveștile de succes și experiențele clienților noștri",
+    "title": "Experiență de Încredere",
+    "subtitle": "Peste 30 de ani de experiență și echipă de experți pentru puieți de nuc de calitate",
+    "originalTitle": "Recenzii Clienți",
+    "originalSubtitle": "Poveștile de succes și experiențele clienților noștri",
     "items": {
       "sarah": {
         "name": "Ahmet Yılmaz",
@@ -200,36 +211,56 @@ const roMessages = {
     "stats": {
       "customers": "Clienți Mulțumiți",
       "experience": "Ani de Experiență",
-      "treesPlanted": "Copaci Plantați"
+      "treesPlanted": "Copaci Plantați",
+      "customersDescription": "Clienții noștri mulțumiți de serviciul nostru de calitate",
+      "experienceDescription": "Experiență expertă în producția și vânzarea de puieți de nuc",
+      "treesPlantedDescription": "Puieți de nuc de calitate plantați în toată Turcia",
+      "qualityGuarantee": "Garanție de Calitate de Încredere"
     }
   },
   "faq": {
     "title": "Întrebări Frecvente",
     "subtitle": "Ce se întreabă despre cultivarea nucilor",
     "items": {
+      "fidanTypes": {
+        "question": "Ce este un puiet de nuc, ce tipuri există?",
+        "answer": "Puietul de nuc are diferite soiuri precum Chandler, Fernor, Pedro, Kaman, Şebin. Este important să alegeți tipul potrivit de puiet în funcție de climă și structura solului pentru randament."
+      },
+      "varietySelection": {
+        "question": "Ce soi de puiet de nuc este potrivit pentru regiunea mea?",
+        "answer": "Selecția puietului de nuc trebuie făcută în funcție de clima, altitudinea și caracteristicile solului din regiunea dumneavoastră. Pentru climatul rece se recomandă Fernor, pentru regiunile calde și temperate Chandler și Pedro."
+      },
       "planting": {
-        "question": "Când trebuie plantați puieții de nuci?",
-        "answer": "Puieții de nuci trebuie plantați în lunile de iarnă (noiembrie-martie) pentru cele mai bune rezultate. În această perioadă, puieții sunt în repaus și se înrădăcinează mai bine după plantare."
+        "question": "Când este timpul de plantare a puieților de nuc?",
+        "answer": "Plantarea puieților de nuc se face în general între noiembrie și martie. Este mai sănătos să plantați puietul în perioada de repaus."
       },
-      "soil": {
-        "question": "Ce tip de sol este potrivit pentru nuci?",
-        "answer": "Copacii de nuci preferă solurile adânci, bine drenate cu valori pH între 6.0-7.5. Solurile argilos-nisipoase sunt ideale și trebuie preferate zonele care nu se inundează."
-      },
-      "spacing": {
-        "question": "Cât trebuie să fie distanța între copaci?",
-        "answer": "Se recomandă o distanță minimă de 8x8 metri pentru copacii de nuci. 10x10 metri ar fi mai potrivit pentru soiurile mari. Această distanță permite dezvoltarea completă a copacilor."
+      "plantingMethod": {
+        "question": "Cum se plantează puietul de nuc?",
+        "answer": "Pentru plantarea puietului se sapă o groapă de 60x60 cm, se amestecă cu îngrășământ organic și rădăcinile puietului se așază cu atenție. După plantare trebuie să se dea neapărat apă de viață."
       },
       "harvest": {
-        "question": "Când pot să recoltez?",
-        "answer": "Copacii de nuci încep în general să rodească la 4-6 ani. Randamentul complet se obține la 8-10 ani. Timpul recoltei este septembrie-octombrie în funcție de soi."
+        "question": "În câți ani dă rod puietul de nuc?",
+        "answer": "Puieții altoiți de nuc încep să dea fructe la 3-4 ani. Randamentul complet se atinge în general la 7-8 ani."
+      },
+      "soil": {
+        "question": "Ce sol este potrivit pentru puietul de nuc?",
+        "answer": "Puietul de nuc iubește solurile adânci și permeabile. Solurile nisipos-argiloase dau cele mai bune rezultate."
+      },
+      "pricing": {
+        "question": "Prețurile puieților de nuc se schimbă în funcție de ce?",
+        "answer": "Prețurile puieților de nuc se schimbă în funcție de soiul puietului, vârstă, dacă este altoit sau nu. Soiul cel mai preferat este puietul de nuc Chandler."
       },
       "care": {
-        "question": "Cum trebuie să se facă îngrijirea?",
-        "answer": "Este necesară udarea regulată, tăierea anuală, fertilizarea și controlul dăunătorilor. În special în primii ani, trebuie acordată atenție udării și fertilizării."
+        "question": "La ce trebuie să fiu atent în îngrijirea puietului de nuc?",
+        "answer": "După plantare trebuie să se facă udare regulată, tăiere și fertilizare. De asemenea, curățarea buruienilor este importantă pentru dezvoltare."
       },
-      "varieties": {
-        "question": "Ce soi trebuie să aleg?",
-        "answer": "Depinde de condițiile climatice și scopul dumneavoastră. Nucii englezești pentru producția comercială, nucii persani pentru climatul rece, iar nucii negri sunt preferați ca portaltoi."
+      "watering": {
+        "question": "Cum se face udarea puietului de nuc?",
+        "answer": "Puietul de nuc trebuie udat regulat, în special în primii 3 ani. Sistemul de irigare prin picurare este cea mai eficientă metodă."
+      },
+      "onlineOrder": {
+        "question": "Este sigură comanda de puieți de nuc prin internet?",
+        "answer": "Da, puteți comanda puieți certificați și altoiți de pe site-urile de încredere pentru vânzarea de puieți de nuc și să îi primiți prin curier."
       }
     },
     "contactCta": {
@@ -283,12 +314,17 @@ const roMessages = {
     "whatsappMessage": "Bună ziua, aș dori să obțin informații despre puieții de nuc."
   },
   "productCta": {
-    "title": "Puieți de Nuc Premium",
-    "subtitle": "Construiește-ți grădina de nuci cu puieții noștri de calitate",
+    "badge": "🌱 Ofertă Specială",
+    "title": "Adresa Corectă pentru Recolte de Succes",
+    "subtitle": "Cu peste 30 de ani de experiență și echipa noastră de experți, vă oferim cei mai calitativ puieți de nuc. Comandați acum!",
+    "guarantee": "100% Garantat",
     "description": "Obține o recoltă de succes cu puieții noștri de nuc cu randament ridicat, crescuți cu grijă de echipa noastră de experți.",
     "primaryButton": "Comandă Acum",
     "secondaryButton": "Contact WhatsApp",
     "benefits": {
+      "qualityAssurance": "Asigurarea Calității",
+      "freeShipping": "Transport Gratuit",
+      "expertConsultation": "Consultanță Expertă",
       "fastDelivery": "Livrare Rapidă",
       "expertSupport": "Suport Expert"
     },
@@ -300,13 +336,17 @@ const roMessages = {
     }
   },
   "footer": {
-    "description": "Ca pepiniera lider de nuci din Turcia, cultivăm cei mai calitativ copaci de nuci cu experiența noastră de 20 de ani.",
+    "description": "Ca pepiniera lider de nuci din Turcia, cultivăm cei mai calitativ puieți de nuc cu experiența noastră de 20 de ani.",
     "quickLinks": "Link-uri Rapide",
     "contact": "Contact",
     "contactInfo": "Informații de Contact",
     "followUs": "Urmăriți-ne",
     "rights": "Toate drepturile rezervate.",
     "copyright": "© {year} Ceviz Plus. Toate drepturile rezervate.",
+    "stats": {
+      "yearsExperience": "Ani de Experiență",
+      "happyCustomers": "Clienți Mulțumiți"
+    },
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",

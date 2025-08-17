@@ -3,7 +3,7 @@ const esMessages = {
   "site": {
     "title": "Ceviz Plus | Vivero Premium de Nueces",
     "description": "Plantones premium de nueces, servicios expertos de arboricultura y consultoría profesional para el cultivo exitoso de nueces. Variedades de nueces inglesas, negras y persas disponibles.",
-    "keywords": "vivero de nueces, árboles de nueces, arboricultura de nueces, cultivo de nueces, nuez inglesa, nuez negra, nuez persa, plantones, planificación de jardines, agricultura de nueces"
+    "keywords": "vivero de nogales, plantones de nogal, arboricultura de nogal, cultivo de nogal, nogal inglés, nogal negro, nogal persa, plantones, planificación de jardín, agricultura de nogal"
   },
   "navigation": {
     "home": "Inicio",
@@ -12,13 +12,15 @@ const esMessages = {
     "gallery": "Galería",
     "testimonials": "Testimonios",
     "contact": "Contacto",
+    "faq": "P.F.",
     "toggleMenu": "Mostrar/Ocultar Menú",
     "orderNow": "Hacer Pedido"
   },
   "hero": {
     "title": "Vivero Premium de Nueces",
-    "subtitle": "Los Árboles de Nueces de Más Alta Calidad de Turquía",
+    "subtitle": "Los Plantones de Nogal de Más Alta Calidad de Turquía",
     "description": "Abre la puerta a cosechas exitosas con los plantones de nueces de más alta calidad. Consultoría profesional y productos garantizados de nuestro equipo experto.",
+    "badge": "🌱 Plantones Premium de Nueces",
     "cta": "Hacer Pedido Ahora",
     "ctaSecondary": "Contacto WhatsApp",
     "benefits": {
@@ -36,8 +38,7 @@ const esMessages = {
     "badges": {
       "popular": "¡Más Popular!",
       "natural": "100% Natural"
-    },
-    "badge": "🌱 Calidad Premium"
+    }
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -78,31 +79,31 @@ const esMessages = {
   },
   "about": {
     "title": "Sobre Nosotros",
-    "subtitle": "20 años de experiencia en cultivo de nueces y miles de clientes satisfechos",
-    "description": "Como Ceviz Plus, hemos estado produciendo los plantones de nueces de más alta calidad de Turquía desde 2004. Con nuestro equipo experto, técnicas de cultivo modernas y procesos de control de calidad, nuestro objetivo es ofrecer los mejores productos a nuestros clientes.",
+    "subtitle": "Más de 30 años de experiencia en cultivo de nueces y miles de clientes satisfechos",
+    "description": "Como Ceviz Plus, producimos los plantones de nogal de más alta calidad de Turquía. Con nuestro equipo experto, técnicas modernas de cultivo y procesos de control de calidad, aspiramos a ofrecer los mejores productos a nuestros clientes.",
     "mission": "Nuestra Misión",
     "missionText": "Desarrollar el cultivo de nueces en Turquía, apoyar la agricultura sostenible proporcionando los plantones de más alta calidad a nuestros agricultores.",
     "vision": "Nuestra Visión",
     "visionText": "Convertirnos en la marca líder de Turquía en viveros de nueces y convertirnos en una marca reconocida en los mercados internacionales.",
-    "stats": {
-      "experience": "Años de Experiencia",
-      "customers": "Clientes Felices",
-      "saplings": "Producción de Plantones",
-      "success": "Tasa de Éxito"
-    },
     "images": {
       "main": {
         "title": "Plantones Premium de Nueces",
         "subtitle": "30+ años de experiencia"
       },
-      "professional": {
+      "care": {
         "title": "Cuidado Profesional",
-        "subtitle": "Servicio de equipo experto"
+        "subtitle": "Soporte experto"
       },
-      "quality": {
+      "production": {
         "title": "Producción de Calidad",
-        "subtitle": "Productos garantizados"
+        "subtitle": "Resultados garantizados"
       }
+    },
+    "stats": {
+      "experience": "Años de Experiencia",
+      "customers": "Clientes Felices",
+      "saplings": "Producción de Plantones",
+      "success": "Tasa de Éxito"
     }
   },
   "gallery": {
@@ -154,7 +155,7 @@ const esMessages = {
       },
       "groveView": {
         "title": "Vista del Huerto",
-        "description": "Magnífica vista de nuestros nogales maduros"
+        "description": "Vista magnífica de nuestros plantones de nogal inglés de 15 años"
       },
       "qualityProduction": {
         "title": "Producción de Calidad",
@@ -169,8 +170,10 @@ const esMessages = {
     }
   },
   "testimonials": {
-    "title": "Reseñas de Clientes",
-    "subtitle": "Historias de éxito y experiencias de nuestros clientes",
+    "title": "Experiencia Confiable",
+    "subtitle": "Con la experiencia de años y miles de clientes satisfechos, somos líderes en el sector de plantones de nogal",
+    "originalTitle": "Reseñas de Clientes",
+    "originalSubtitle": "Historias de éxito y experiencias de nuestros clientes",
     "items": {
       "sarah": {
         "name": "Ahmet Yılmaz",
@@ -200,36 +203,56 @@ const esMessages = {
     "stats": {
       "customers": "Clientes Felices",
       "experience": "Años de Experiencia",
-      "treesPlanted": "Árboles Plantados"
+      "treesPlanted": "Árboles Plantados",
+      "customersDescription": "Clientes satisfechos con nuestro servicio de calidad",
+      "experienceDescription": "Experiencia experta en producción y venta de plantones de nogal",
+      "treesPlantedDescription": "Plantones de nogal de calidad plantados en toda Turquía",
+      "qualityGuarantee": "Garantía de Calidad Confiable"
     }
   },
   "faq": {
     "title": "Preguntas Frecuentes",
     "subtitle": "Lo que se pregunta sobre el cultivo de nueces",
     "items": {
+      "fidanTypes": {
+        "question": "¿Qué es un plantón de nogal, qué tipos hay?",
+        "answer": "El plantón de nogal tiene diferentes variedades como Chandler, Fernor, Pedro, Kaman, Şebin. Elegir el tipo correcto de plantón según el clima y la estructura del suelo es importante para el rendimiento."
+      },
+      "varietySelection": {
+        "question": "¿Qué variedad de plantón de nogal es adecuada para mi región?",
+        "answer": "La selección del plantón de nogal debe hacerse según el clima, altitud y características del suelo de su región. Se recomienda Fernor para climas fríos, Chandler y Pedro para regiones cálidas y templadas."
+      },
       "planting": {
-        "question": "¿Cuándo deben plantarse los plantones de nueces?",
-        "answer": "Los plantones de nueces deben plantarse en los meses de invierno (noviembre-marzo) para obtener mejores resultados. Durante este período, los plantones están inactivos y echan raíces mejor después de la plantación."
+        "question": "¿Cuándo es el tiempo de plantación del plantón de nogal?",
+        "answer": "La plantación del plantón de nogal generalmente se hace entre noviembre y marzo. Es más saludable plantar el plantón durante su período de dormancia."
       },
-      "soil": {
-        "question": "¿Qué tipo de suelo es adecuado para las nueces?",
-        "answer": "Los árboles de nueces prefieren suelos profundos, bien drenados con valores de pH entre 6.0-7.5. Los suelos arcillo-arenosos son ideales, y se deben preferir áreas que no se inunden."
-      },
-      "spacing": {
-        "question": "¿Cuál debe ser la distancia entre árboles?",
-        "answer": "Se recomienda una distancia mínima de 8x8 metros para árboles de nueces. 10x10 metros sería más adecuado para variedades grandes. Esta distancia permite el desarrollo completo de los árboles."
+      "plantingMethod": {
+        "question": "¿Cómo se planta un plantón de nogal?",
+        "answer": "Para la plantación del plantón se abre un hoyo de 60x60 cm, se mezcla con fertilizante orgánico y las raíces del plantón se colocan cuidadosamente. Después de la plantación se debe dar agua de vida obligatoriamente."
       },
       "harvest": {
-        "question": "¿Cuándo puedo cosechar?",
-        "answer": "Los árboles de nueces generalmente comienzan a dar fruto a los 4-6 años de edad. El rendimiento completo se obtiene a los 8-10 años. El tiempo de cosecha es septiembre-octubre dependiendo de la variedad."
+        "question": "¿En cuántos años da fruto el plantón de nogal?",
+        "answer": "Los plantones de nogal injertados comienzan a dar fruto a los 3-4 años de edad. Generalmente tarda 7-8 años en alcanzar la producción completa."
+      },
+      "soil": {
+        "question": "¿Qué suelo es adecuado para el plantón de nogal?",
+        "answer": "El plantón de nogal prefiere suelos profundos y permeables. Los suelos franco-arenosos dan los mejores resultados."
+      },
+      "pricing": {
+        "question": "¿Según qué cambian los precios de los plantones de nogal?",
+        "answer": "Los precios de los plantones de nogal cambian según la variedad del plantón, su edad, si está injertado o no. La variedad más preferida es el plantón de nogal Chandler."
       },
       "care": {
-        "question": "¿Cómo debe hacerse el cuidado?",
-        "answer": "Se requiere riego regular, poda anual, fertilización y control de plagas. Especialmente en los primeros años, se debe prestar atención al riego y la fertilización."
+        "question": "¿A qué se debe prestar atención en el cuidado del plantón de nogal?",
+        "answer": "Después de la plantación se debe hacer riego regular, poda y fertilización. También la limpieza de malezas es importante para el desarrollo."
       },
-      "varieties": {
-        "question": "¿Qué variedad debo elegir?",
-        "answer": "Varía según sus condiciones climáticas y propósito. Nuez inglesa para producción comercial, nuez persa para climas fríos, y la nuez negra se prefiere como portainjerto."
+      "watering": {
+        "question": "¿Cómo se hace el riego del plantón de nogal?",
+        "answer": "El plantón de nogal debe regarse regularmente especialmente durante los primeros 3 años. El sistema de riego por goteo es el método más eficiente."
+      },
+      "onlineOrder": {
+        "question": "¿Es seguro pedir plantones de nogal por internet?",
+        "answer": "Sí, puede pedir plantones certificados e injertados de sitios web confiables de venta de plantones de nogal y recibirlos por cargo."
       }
     },
     "contactCta": {
@@ -283,12 +306,17 @@ const esMessages = {
     "whatsappMessage": "Hola, me gustaría obtener información sobre plantones de nogal."
   },
   "productCta": {
-    "title": "Plantones de Nogal Premium",
-    "subtitle": "Construye tu jardín de nogales con nuestros plantones de calidad",
-    "description": "Logra una cosecha exitosa con nuestros plantones de nogal de alto rendimiento, cultivados cuidadosamente por nuestro equipo experto.",
-    "primaryButton": "Pedir Ahora",
+    "badge": "🌱 Oferta Especial",
+    "title": "La Dirección Correcta para Cosechas Exitosas",
+    "subtitle": "Con más de 30 años de experiencia y nuestro equipo experto, les ofrecemos los plantones de nogal de más alta calidad. ¡Haga su pedido ahora!",
+    "description": "Logre una cosecha exitosa con nuestros plantones de nogal de alto rendimiento, cultivados cuidadosamente por nuestro equipo experto.",
+    "guarantee": "100% Garantizado",
+    "primaryButton": "Hacer Pedido Ahora",
     "secondaryButton": "Contacto WhatsApp",
     "benefits": {
+      "qualityAssurance": "Garantía de Calidad",
+      "freeShipping": "Envío Gratuito",
+      "expertConsultation": "Consultoría Experta",
       "fastDelivery": "Entrega Rápida",
       "expertSupport": "Soporte Experto"
     },
@@ -307,6 +335,10 @@ const esMessages = {
     "followUs": "Síguenos",
     "rights": "Todos los derechos reservados.",
     "copyright": "© {year} Ceviz Plus. Todos los derechos reservados.",
+    "stats": {
+      "yearsExperience": "Años de Experiencia",
+      "happyCustomers": "Clientes Felices"
+    },
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",

@@ -3,7 +3,7 @@ const srMessages = {
   "site": {
     "title": "Ceviz Plus | Premium Rasadnik Oraha",
     "description": "Premium sadnice oraha, stručne usluge arborkulture i profesionalno savetovanje za uspešno gajenje oraha. Dostupne sorte engleskog, crnog i persijskog oraha.",
-    "keywords": "rasadnik oraha, stabla oraha, arborkultura oraha, gajenje oraha, engleski orah, crni orah, persijski orah, sadnice, planiranje bašte, poljoprivreda oraha"
+    "keywords": "rasadnik oraha, sadnice oraha, arborkultura oraha, gajenje oraha, engleski orah, crni orah, persijski orah, sadnice, planiranje bašte, poljoprivreda oraha"
   },
   "navigation": {
     "home": "Početna",
@@ -12,12 +12,13 @@ const srMessages = {
     "gallery": "Galerija",
     "testimonials": "Svedočanstva",
     "contact": "Kontakt",
+    "faq": "Č.P.P.",
     "toggleMenu": "Prikaži/Sakrij Meni",
     "orderNow": "Naruči Sada"
   },
   "hero": {
     "title": "Premium Rasadnik Oraha",
-    "subtitle": "Najkvalitetnija Stabla Oraha iz Turske",
+    "subtitle": "Najkvalitetnije Sadnice Oraha iz Turske",
     "description": "Otvorite vrata uspešnim žetvama sa najkvalitetnijim sadnicama oraha. Profesionalno savetovanje i garantovani proizvodi od našeg stručnog tima.",
     "cta": "Naruči Odmah",
     "ctaSecondary": "WhatsApp Kontakt",
@@ -102,6 +103,14 @@ const srMessages = {
       "quality": {
         "title": "Kvalitetna Proizvodnja",
         "subtitle": "Garantovani proizvodi"
+      },
+      "care": {
+        "title": "Profesionalna Nega",
+        "subtitle": "Stručna usluga nege"
+      },
+      "production": {
+        "title": "Kvalitetna Proizvodnja",
+        "subtitle": "Garantovani proizvodi"
       }
     }
   },
@@ -154,7 +163,7 @@ const srMessages = {
       },
       "groveView": {
         "title": "Pogled na Nasad",
-        "description": "Veličanstven pogled na naša zrela stabla oraha"
+        "description": "Veličanstven pogled na naše 15-godišnje sadnice engleskog oraha"
       },
       "qualityProduction": {
         "title": "Kvalitetna Proizvodnja",
@@ -169,8 +178,10 @@ const srMessages = {
     }
   },
   "testimonials": {
-    "title": "Recenzije Kupaca",
-    "subtitle": "Priče o uspehu i iskustva naših kupaca",
+    "title": "Pouzdano Iskustvo",
+    "subtitle": "Više od 30 godina iskustva i stručni tim za kvalitetne sadnice oraha",
+    "originalTitle": "Recenzije Kupaca",
+    "originalSubtitle": "Priče o uspehu i iskustva naših kupaca",
     "items": {
       "sarah": {
         "name": "Ahmet Yılmaz",
@@ -200,36 +211,56 @@ const srMessages = {
     "stats": {
       "customers": "Zadovoljnih Kupaca",
       "experience": "Godina Iskustva",
-      "treesPlanted": "Posađenih Stabala"
+      "treesPlanted": "Posađenih Stabala",
+      "customersDescription": "Naši kupci zadovoljni našom kvalitetnom uslugom",
+      "experienceDescription": "Stručno iskustvo u proizvodnji i prodaji sadnica oraha",
+      "treesPlantedDescription": "Kvalitetne sadnice oraha posađene širom Turske",
+      "qualityGuarantee": "Pouzdana Garancija Kvaliteta"
     }
   },
   "faq": {
     "title": "Često Postavljana Pitanja",
     "subtitle": "Ono što se pita o gajenju oraha",
     "items": {
+      "fidanTypes": {
+        "question": "Šta je sadnica oraha, koje vrste postoje?",
+        "answer": "Sadnica oraha ima različite sorte kao što su Chandler, Fernor, Pedro, Kaman, Şebin. Važno je odabrati pravu vrstu sadnice prema klimi i strukturi zemljišta za prinos."
+      },
+      "varietySelection": {
+        "question": "Koja sorta sadnice oraha je pogodna za moj region?",
+        "answer": "Izbor sadnice oraha treba da se vrši prema klimi, nadmorskoj visini i karakteristikama zemljišta vašeg regiona. Za hladne klime se preporučuje Fernor, za tople i umerene regione Chandler i Pedro."
+      },
       "planting": {
         "question": "Kada treba saditi sadnice oraha?",
-        "answer": "Sadnice oraha treba saditi u zimskim mesecima (novembar-mart) za najbolje rezultate. Tokom ovog perioda, sadnice su u mirovanju i bolje se ukorenavaju nakon sadnje."
+        "answer": "Sadnice oraha se generalno sade između novembra i marta. Zdravije je saditi sadnicu tokom perioda mirovanja."
       },
-      "soil": {
-        "question": "Kakav tip zemljišta je pogodan za orah?",
-        "answer": "Stabla oraha preferiraju duboka, dobro drenirana zemljišta sa pH vrednostima između 6.0-7.5. Glinasto-peskovita zemljišta su idealna, i treba preferirati oblasti koje se ne poplavljuju."
-      },
-      "spacing": {
-        "question": "Koliko treba da bude rastojanje između stabala?",
-        "answer": "Preporučuje se minimalno rastojanje od 8x8 metara za stabla oraha. 10x10 metara bi bilo pogodnije za velike sorte. Ovo rastojanje omogućava pun razvoj stabala."
+      "plantingMethod": {
+        "question": "Kako se sadi sadnica oraha?",
+        "answer": "Za sadnju sadnice se kopa rupa 60x60 cm, meša se sa organskim đubrivom i koreni sadnice se pažljivo postavljaju. Nakon sadnje obavezno treba dati životnu vodu."
       },
       "harvest": {
-        "question": "Kada mogu da žanjem?",
-        "answer": "Stabla oraha generalno počinju da rađaju sa 4-6 godina starosti. Pun prinos se dobija sa 8-10 godina. Vreme žetve je septembar-oktobar u zavisnosti od sorte."
+        "question": "Za koliko godina sadnica oraha daje plod?",
+        "answer": "Kalemljene sadnice oraha počinju da daju plodove sa 3-4 godine. Pun prinos generalno dostiže za 7-8 godina."
+      },
+      "soil": {
+        "question": "Koje zemljište je pogodno za sadnicu oraha?",
+        "answer": "Sadnica oraha voli duboka i propusna zemljišta. Peskovito-glinasta zemljišta daju najbolje rezultate."
+      },
+      "pricing": {
+        "question": "Prema čemu se menjaju cene sadnica oraha?",
+        "answer": "Cene sadnica oraha se menjaju prema sorti sadnice, godinama, tome da li je kalemljena ili ne. Najtraženija sorta je Chandler sadnica oraha."
       },
       "care": {
-        "question": "Kako treba da se vrši nega?",
-        "answer": "Potrebno je redovno zalivanje, godišnje orezivanje, đubrenje i kontrola štetočina. Posebno u prvim godinama, treba obratiti pažnju na zalivanje i đubrenje."
+        "question": "Na šta treba obratiti pažnju u nezi sadnice oraha?",
+        "answer": "Nakon sadnje treba vršiti redovno zalivanje, orezivanje i đubrenje. Takođe je važno čišćenje korova za razvoj."
       },
-      "varieties": {
-        "question": "Koju sortu treba da izaberem?",
-        "answer": "Zavisi od vaših klimatskih uslova i namene. Engleski orah za komercijalnu proizvodnju, persijski orah za hladne klime, a crni orah se preferira kao podloga."
+      "watering": {
+        "question": "Kako se vrši zalivanje sadnice oraha?",
+        "answer": "Sadnica oraha treba da se zaliva redovno posebno tokom prve 3 godine. Sistem kap po kap zalivanja je najefikasniji metod."
+      },
+      "onlineOrder": {
+        "question": "Da li je bezbedna porudžbina sadnice oraha preko interneta?",
+        "answer": "Da, možete poručiti sertifikovane i kalemljene sadnice sa pouzdanih sajtova za prodaju sadnica oraha i primiti ih kurirskom službom."
       }
     },
     "contactCta": {
@@ -283,12 +314,17 @@ const srMessages = {
     "whatsappMessage": "Здраво, желео бих да добијем информације о садницама ораха."
   },
   "productCta": {
-    "title": "Premium Sadnice Oraha",
-    "subtitle": "Izgradite svoju baštu oraha sa našim kvalitetnim sadnicama",
+    "badge": "🌱 Specijalna Ponuda",
+    "title": "Prava Adresa za Uspešne Žetve",
+    "subtitle": "Sa našim više od 30 godina iskustva i stručnim timom, nudimo vam najkvalitetnije sadnice oraha. Naručite odmah!",
+    "guarantee": "100% Garantovano",
     "description": "Postignite uspešnu žetvu sa našim visokoprinosnim sadnicama oraha, pažljivo uzgajanim od strane našeg stručnog tima.",
     "primaryButton": "Naruči Odmah",
     "secondaryButton": "WhatsApp Kontakt",
     "benefits": {
+      "qualityAssurance": "Garancija Kvaliteta",
+      "freeShipping": "Besplatna Dostava",
+      "expertConsultation": "Stručno Savetovanje",
       "fastDelivery": "Brza Dostava",
       "expertSupport": "Stručna Podrška"
     },
@@ -300,13 +336,17 @@ const srMessages = {
     }
   },
   "footer": {
-    "description": "Kao vodeći rasadnik oraha u Turskoj, gajimo najkvalitetnija stabla oraha sa našim 20-godišnjim iskustvom.",
+    "description": "Kao vodeći rasadnik oraha u Turskoj, gajimo najkvalitetnije sadnice oraha sa našim 20-godišnjim iskustvom.",
     "quickLinks": "Brzi Linkovi",
     "contact": "Kontakt",
     "contactInfo": "Kontakt Informacije",
     "followUs": "Pratite Nas",
     "rights": "Sva prava zadržana.",
     "copyright": "© {year} Ceviz Plus. Sva prava zadržana.",
+    "stats": {
+      "yearsExperience": "Godina Iskustva",
+      "happyCustomers": "Zadovoljnih Kupaca"
+    },
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
